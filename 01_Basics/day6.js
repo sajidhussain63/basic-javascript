@@ -1,3 +1,5 @@
+//OPERATORS IN JS
+
 // 1. ARITHMETIC OPERATORS
 
 let a = 10;
