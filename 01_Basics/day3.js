@@ -1,33 +1,27 @@
-//How var and let are different 
-//why we use let now these days
+// String
+let name = "Sajid";
+console.log(typeof name);
 
-//var (It gives the accessing out of the block)
-//how lets see
+// Number
+let age = 20;
+console.log(typeof age);
 
-function see_diff(){
-    for(var i=0;i<5;i++){
-        console.log(i)
-    }
-    //if I am printing i here means now value of i is 5 because till
-    //condition it was 4 now condition is false
-    //but var gives access here as well
-    console.log(i)
+// Boolean
+let isStudent = true;
+console.log(typeof isStudent);
 
-}
+// Undefined
+let x;
+console.log(typeof x);
 
-see_diff() //output will be 0 1 2 3 4 5 //but condition was till 4 that is disadvatage of using var
+// Null
+let y = null;
+console.log(typeof y); // object (special case)
 
-//Just printing the a statement to see different 
-console.log("NOW THIS IS USAGE OF let")
-//But let (It does not allow the accessing out of the block)
-function see_diff1(){
-    for(let j=0;j<5;j++){
-        console.log(j)
-    }
-    //console.log(i) 
-    ////this will through error that i is not defined
-    //because let does not allow out of the block accessing.
-    //That is totally write because condition of loop became safe here.
-}
+// BigInt
+let bigNumber = 1234567890123456789012345n;
+console.log(typeof bigNumber);
 
-see_diff1()
+// Symbol
+let sym = Symbol("id");
+console.log(typeof sym);
